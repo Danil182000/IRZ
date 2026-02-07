@@ -1,0 +1,55 @@
+{
+    "timestamp": "2025-06-16 11:55:43",
+    "duration": 0.0010218620300292969,
+    "summary": {
+        "totalPages": 0,
+        "averageLoadTime": 0,
+        "fastestPage": "",
+        "slowestPage": "",
+        "totalErrors": 0,
+        "totalWarnings": 0,
+        "securityScore": 0,
+        "performanceScore": 0
+    },
+    "categoryResults": {
+        "Регистрация": {
+            "status": true,
+            "errors": [],
+            "checks": []
+        },
+        "Вход": {
+            "status": true,
+            "errors": [],
+            "checks": []
+        },
+        "Навигация": {
+            "status": true,
+            "errors": [],
+            "checks": []
+        },
+        "Безопасность": {
+            "status": true,
+            "errors": [],
+            "checks": []
+        },
+        "Адаптация": {
+            "status": true,
+            "errors": [],
+            "checks": [
+                "Проверка адаптивных классов Bootstrap",
+                "Проверка наличия мета-тега viewport"
+            ]
+        }
+    },
+    "analytics": {
+        "pageLoads": [],
+        "responseTimes": [],
+        "errors": [],
+        "warnings": [],
+        "securityChecks": [],
+        "performanceMetrics": [],
+        "functionChecks": [],
+        "testAccounts": [],
+        "authChecks": []
+    }
+}

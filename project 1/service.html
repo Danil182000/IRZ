@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Услуги — DrivePoint</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 25px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ff5200;
+      text-decoration: none;
+    }
+    nav a {
+      color: white;
+      margin-left: 35px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff5200;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    .section-title {
+      font-size: 42px;
+      text-align: center;
+      margin-bottom: 60px;
+      color: #1f1f1f;
+    }
+    .section-title span {
+      color: #ff5200;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+    .service-item {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .service-item:hover {
+      transform: translateY(-10px);
+    }
+    .service-item h3 {
+      font-size: 22px;
+      color: #ff5200;
+      margin-bottom: 10px;
+    }
+    .service-item p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .service-item .price {
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 60px 0 30px;
+    }
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-column h3 {
+      color: #ff5200;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+    .footer-column ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer-column ul li a:hover {
+      color: #ff5200;
+    }
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid #333;
+      color: #999;
+    }
+
+    @media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin-left: 0;
+        color: white;
+    }
+
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .service-item {
+        padding: 20px;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+
+    .service-item p {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 40px 15px;
+    }
+
+    footer {
+        padding: 40px 0 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-column h3 {
+        font-size: 18px;
+    }
+
+    .footer-column ul li {
+        font-size: 15px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+  <a href="index.html" class="logo">DrivePoint</a>
+      <nav>
+        <a href="service.html">Услуги</a>
+        <a href="faq.html">FAQ</a>
+        <a href="vacancies.html">Вакансии</a>
+        <a href="login.html">Личный кабинет</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <h1 class="section-title"><span>Услуги</span> автосервиса</h1>
+  <div class="services-grid">
+  <!-- Диагностика -->
+  <div class="service-item">
+    <h3>Компьютерная диагностика</h3>
+    <p>Полное сканирование всех систем автомобиля.</p>
+    <p class="price">от 1 200 ₽ | ~ 30 мин</p>
+  </div>
+  <div class="service-item">
+    <h3>Диагностика подвески</h3>
+    <p>Проверка состояния амортизаторов, рычагов, втулок и пр.</p>
+    <p class="price">от 800 ₽ | ~ 20 мин</p>
+  </div>
+
+  <!-- Ремонт -->
+  <div class="service-item">
+    <h3>Ремонт ходовой части</h3>
+    <p>Замена рычагов, сайлентблоков, ступичных подшипников.</p>
+    <p class="price">от 3 500 ₽ | ~ 1.5 ч</p>
+  </div>
+  <div class="service-item">
+    <h3>Замена ГРМ</h3>
+    <p>Работы по замене ремня ГРМ, роликов и помпы (при необходимости).</p>
+    <p class="price">от 6 000 ₽ | ~ 2.5 ч</p>
+  </div>
+  <div class="service-item">
+    <h3>Ремонт рулевого управления</h3>
+    <p>Диагностика и ремонт рейки, насоса ГУР, рулевых тяг.</p>
+    <p class="price">от 4 500 ₽ | ~ 2 ч</p>
+  </div>
+
+  <!-- Техническое обслуживание -->
+  <div class="service-item">
+    <h3>Замена масла в АКПП</h3>
+    <p>Частичная или полная замена трансмиссионного масла.</p>
+    <p class="price">от 2 500 ₽ | ~ 1 ч</p>
+  </div>
+  <div class="service-item">
+    <h3>Замена тормозной жидкости</h3>
+    <p>Полная замена с прокачкой тормозной системы.</p>
+    <p class="price">от 1 300 ₽ | ~ 40 мин</p>
+  </div>
+
+  <!-- Шиномонтаж -->
+  <div class="service-item">
+    <h3>Шиномонтаж 13–17"</h3>
+    <p>Снятие, установка, балансировка колёс.</p>
+    <p class="price">от 2 000 ₽ за комплект</p>
+  </div>
+  <div class="service-item">
+    <h3>Хранение шин</h3>
+    <p>Сезонное хранение комплекта колёс в чистом и сухом помещении.</p>
+    <p class="price">от 1 500 ₽ / сезон</p>
+  </div>
+
+  <!-- Электрика -->
+  <div class="service-item">
+    <h3>Замена аккумулятора</h3>
+    <p>Демонтаж, установка и проверка нового АКБ.</p>
+    <p class="price">от 700 ₽ | ~ 20 мин</p>
+  </div>
+  <div class="service-item">
+    <h3>Установка сигнализации</h3>
+    <p>Монтаж автосигнализации с автозапуском и обратной связью.</p>
+    <p class="price">от 7 000 ₽ | ~ 3–4 ч</p>
+  </div>
+
+  <!-- Дополнительно -->
+  <div class="service-item">
+    <h3>Антикоррозийная обработка</h3>
+    <p>Обработка кузова и днища антикором.</p>
+    <p class="price">от 6 000 ₽ | ~ 2 ч</p>
+  </div>
+  <div class="service-item">
+    <h3>Химчистка салона</h3>
+    <p>Полная сухая и влажная чистка салона.</p>
+    <p class="price">от 3 500 ₽ | ~ 2–3 ч</p>
+  </div>
+</div>
+</section>
+
+<footer>
+  <div class="container footer-content">
+    <div class="footer-column">
+      <h3>О компании</h3>
+      <ul>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="history.html">История</a></li>
+        <li><a href="advantages.html">Преимущества</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Услуги</h3>
+      <ul>
+        <li><a href="#">Диагностика</a></li>
+        <li><a href="#">Ремонт</a></li>
+        <li><a href="#">ТО</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Контакты</h3>
+      <ul>
+        <li>+7 (900) 123-45-67</li>
+        <li>г. Москва, ул. Автомобильная, 12</li>
+        <li><a href="contacts.html">Обратная связь</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    &copy; 2025 DrivePoint. Все права защищены.
+  </div>
+</footer>
+
+</body>
+</html>

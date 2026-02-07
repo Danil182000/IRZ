@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — DrivePoint</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 25px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ff5200;
+      text-decoration: none;
+    }
+    nav a {
+      color: white;
+      margin-left: 35px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff5200;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      font-size: 42px;
+      text-align: center;
+      margin-bottom: 60px;
+      color: #1f1f1f;
+    }
+
+    .section-title span {
+      color: #ff5200;
+    }
+
+    .faq-list {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .faq-item {
+      margin-bottom: 30px;
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      color: #ff5200;
+      margin-bottom: 10px;
+    }
+
+    .faq-item p {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 60px 0 30px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-column h3 {
+      color: #ff5200;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #ff5200;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid #333;
+      color: #999;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 15px;
+      }
+
+      nav a {
+        font-size: 16px;
+        margin-left: 0;
+        color: white;
+      }
+
+      .section-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+
+      .faq-item h3 {
+        font-size: 18px;
+      }
+
+      .faq-item p {
+        font-size: 15px;
+      }
+
+      footer {
+        padding: 40px 0 20px;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .footer-column h3 {
+        font-size: 18px;
+      }
+
+      .footer-column ul li {
+        font-size: 15px;
+      }
+
+      .copyright {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+  <a href="index.html" class="logo">DrivePoint</a>
+      <nav>
+        <a href="service.html">Услуги</a>
+        <a href="faq.html">FAQ</a>
+        <a href="vacancies.html">Вакансии</a>
+        <a href="login.html">Личный кабинет</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <h1 class="section-title"><span>FAQ</span> — Часто задаваемые вопросы</h1>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3>Сколько действует гарантия на выполненные работы?</h3>
+      <p>На все услуги предоставляется гарантия от 6 месяцев до 1 года в зависимости от вида работ.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Сколько времени занимает стандартное ТО?</h3>
+      <p>Как правило, техническое обслуживание занимает от 1 до 2 часов в зависимости от объема работ и загруженности сервиса.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Вы используете оригинальные запчасти?</h3>
+      <p>Да, мы работаем как с оригинальными, так и с качественными аналогами от проверенных производителей по желанию клиента.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Можно ли привезти свои запчасти?</h3>
+      <p>Да, вы можете предоставить собственные запчасти, однако в этом случае гарантия предоставляется только на работы.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Нужно ли записываться заранее?</h3>
+      <p>Рекомендуется предварительная запись, особенно в выходные и праздничные дни — это сократит время ожидания.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Какие способы оплаты вы принимаете?</h3>
+      <p>Мы принимаем наличные, банковские карты, а также безналичный расчёт для юридических лиц.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Можно ли остаться в сервисе во время ремонта?</h3>
+        <p>Да, у нас есть зона ожидания с Wi-Fi, кофе и удобными креслами. Также можно наблюдать за ремонтом через окно или видеомонитор.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Что делать, если после ремонта проблема осталась?</h3>
+        <p>Обратитесь к нам в кратчайшие сроки — мы проведем повторную диагностику и устраним неисправность согласно условиям гарантии.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Как я могу узнать точную стоимость до начала работ?</h3>
+        <p>После осмотра автомобиля мы составим точную смету и согласуем с вами все работы перед началом ремонта.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Работаете ли вы в выходные и праздничные дни?</h3>
+        <p>Да, наш автосервис работает без выходных, включая праздничные дни, по графику с 9:00 до 21:00.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Можно ли записаться онлайн?</h3>
+        <p>Да, вы можете оставить заявку на сайте через форму на странице "Запись", и наш менеджер свяжется с вами для подтверждения.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-content">
+    <div class="footer-column">
+      <h3>О компании</h3>
+      <ul>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="history.html">История</a></li>
+        <li><a href="advantages.html">Преимущества</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Услуги</h3>
+      <ul>
+        <li><a href="#">Диагностика</a></li>
+        <li><a href="#">Ремонт</a></li>
+        <li><a href="#">ТО</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Контакты</h3>
+      <ul>
+        <li>+7 (900) 123-45-67</li>
+        <li>г. Москва, ул. Автомобильная, 12</li>
+        <li><a href="contacts.html">Обратная связь</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    &copy; 2025 DrivePoint. Все права защищены.
+  </div>
+</footer>
+
+</body>
+</html>

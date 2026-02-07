@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DrivePoint — Профессиональный автосервис</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 25px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ff5200;
+      text-decoration: none;
+    }
+    nav a {
+      color: white;
+      margin-left: 35px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff5200;
+    }
+    .hero {
+      background: url('img/back.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 58px;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+      line-height: 1.3;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #ff5200;
+      color: white;
+      padding: 15px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      margin-top: 20px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .btn:hover {
+      background-color: #e04a00;
+      transform: translateY(-3px);
+    }
+    section {
+      padding: 80px 0;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 42px;
+      margin-bottom: 60px;
+      color: #1f1f1f;
+    }
+    .section-title span {
+      color: #ff5200;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      padding: 60px 40px;
+      background-color: white;
+    }
+    .feature {
+      background: #fafafa;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+    .feature h3 {
+      margin-bottom: 15px;
+      color: #ff5200;
+      font-size: 24px;
+    }
+    .feature p {
+      font-size: 16px;
+    }
+    .advantages {
+      background-color: #1f1f1f;
+      color: white;
+    }
+    .advantages .section-title {
+      color: white;
+    }
+    .advantages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+    .advantage-item {
+      background: #2e2e2e;
+      padding: 30px;
+      border-radius: 10px;
+      border-left: 5px solid #ff5200;
+    }
+    .advantage-item h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #ff5200;
+    }
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 60px 0 30px;
+    }
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-column h3 {
+      color: #ff5200;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .footer-column ul {
+      list-style: none;
+    }
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+    .footer-column ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer-column ul li a:hover {
+      color: #ff5200;
+    }
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid #333;
+      color: #999;
+    }
+
+    /* Медиазапросы для мобильных устройств */
+    @media (max-width: 992px) {
+      .history-content {
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+      }
+      nav {
+        margin-top: 20px;
+      }
+      nav a {
+        margin: 0 10px;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      .hero h1 {
+        font-size: 42px;
+      }
+      .section-title {
+        font-size: 36px;
+      }
+    }
+    @media (max-width: 576px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+      .section-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+      .features {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+      }
+      .feature {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">DrivePoint</a>
+      <nav>
+        <a href="service.html">Услуги</a>
+        <a href="faq.html">FAQ</a>
+        <a href="vacancies.html">Вакансии</a>
+        <a href="login.html">Личный кабинет</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Ваш автомобиль — в надёжных руках. DrivePoint решит любую проблему.</h1>
+      <a href="login.html" class="btn">Записаться на сервис</a>
+    </div>
+  </section>
+
+  <section id="services" class="features">
+    <div class="feature">
+      <h3>10+ лет опыта</h3>
+      <p>Работаем с автомобилями всех марок по высоким стандартам качества. Наши специалисты проходят регулярное обучение.</p>
+    </div>
+    <div class="feature">
+      <h3>Современное оборудование</h3>
+      <p>Точные диагностики с использованием новейшего оборудования, быстрые и качественные ремонты любой сложности.</p>
+    </div>
+    <div class="feature">
+      <h3>Гарантия на работы</h3>
+      <p>До 24 месяцев гарантии на все выполненные работы. Мы уверены в качестве нашего сервиса.</p>
+    </div>
+    <div class="feature">
+      <h3>Онлайн-запись 24/7</h3>
+      <p>Запишитесь в любое удобное время через сайт или мобильное приложение. Гибкая система скидок для постоянных клиентов.</p>
+    </div>
+  </section>
+
+  <section id="history" class="history">
+    <div class="container">
+      <h2 class="section-title">Наша <span>история</span></h2>
+      <div class="history-content">
+        <div class="history-text">
+          <p>DrivePoint был основан в 2010 году как небольшая мастерская по ремонту автомобилей. Наш основатель, Алексей Петров, механик с 20-летним опытом, хотел создать место, где к каждому автомобилю относятся с вниманием и заботой.
+
+Уже через 2 года мы расширились до полноценного автосервиса с 5 постами. В 2015 году открыли второй филиал в городе, а в 2018 году полностью модернизировали оборудование, внедрив цифровые технологии диагностики.
+
+Сегодня DrivePoint — это сеть из 4 современных автосервисов в регионе, укомплектованных лучшим оборудованием и командой из 35 высококвалифицированных специалистов. Мы гордимся тем, что более 12,000 клиентов доверяют нам свои автомобили ежегодно.</p>
+        </div>
+        <div class="history-image">
+          <img src="https://via.placeholder.com/600x400" alt="Наш первый автосервис в 2010 году">
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section id="advantages" class="advantages">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают <span>DrivePoint</span></h2>
+      <div class="advantages-grid">
+        <div class="advantage-item">
+          <h3>Экспертный подход</h3>
+          <p>Каждый наш мастер специализируется на конкретных марках автомобилей, что обеспечивает глубокое знание особенностей каждой модели.</p>
+        </div>
+        <div class="advantage-item">
+          <h3>Прозрачность работ</h3>
+          <p>Мы предоставляем полный фотоотчет всех этапов ремонта, а также подробную смету до начала работ без скрытых платежей и "сюрпризов".</p>
+        </div>
+        <div class="advantage-item">
+          <h3>Скорость и комфорт</h3>
+          <p>Работаем точно в срок. Для клиентов — зона ожидания с Wi-Fi, кофе и уютной атмосферой.</p>
+        </div>
+        <div class="advantage-item">
+          <h3>Гарантированное качество</h3>
+          <p>Используем только оригинальные запчасти и сертифицированные технологии. Все работы документируются и подтверждаются.</p>
+    </section>
+    
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-column">
+        <h3>О компании</h3>
+        <ul>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="history.html">История</a></li>
+          <li><a href="advantages.html">Преимущества</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="services.html#diagnostics">Диагностика</a></li>
+          <li><a href="services.html#repair">Ремонт</a></li>
+          <li><a href="services.html#maintenance">ТО</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Контакты</h3>
+        <ul>
+          <li>+7 (900) 123-45-67</li>
+          <li>г. Москва, ул. Автомобильная, 12</li>
+          <li><a href="contacts.html">Обратная связь</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2025 DrivePoint. Все права защищены.
+    </div>
+  </footer>
+
+</body>
+</html>

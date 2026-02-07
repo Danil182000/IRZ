@@ -1,0 +1,17 @@
+Auto Service
+ [x] Home page load
+ [x] Services page load
+ [x] Faq page load
+ [x] Vacancies page load
+ [x] Auth page
+ [x] Profile page
+ [x] Logout file
+ [x] Navigation menu
+ [x] Important elements
+ [x] Performance
+ [x] Html validity
+ [x] Security
+ [x] Responsiveness
+ [x] Faq search
+ [x] Services filter
+

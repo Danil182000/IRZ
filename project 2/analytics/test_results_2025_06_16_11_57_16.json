@@ -1,0 +1,64 @@
+{
+    "timestamp": "2025-06-16 11:57:16",
+    "duration": 0.0004570484161376953,
+    "summary": {
+        "totalPages": 0,
+        "averageLoadTime": 0,
+        "fastestPage": "",
+        "slowestPage": "",
+        "totalErrors": 0,
+        "totalWarnings": 0,
+        "securityScore": 0,
+        "performanceScore": 0
+    },
+    "categoryResults": {
+        "Регистрация": {
+            "status": true,
+            "errors": [],
+            "checks": []
+        },
+        "Вход": {
+            "status": true,
+            "errors": [],
+            "checks": []
+        },
+        "Навигация": {
+            "status": true,
+            "errors": [],
+            "checks": []
+        },
+        "Безопасность": {
+            "status": true,
+            "errors": [],
+            "checks": []
+        },
+        "Адаптация": {
+            "status": true,
+            "errors": [],
+            "checks": []
+        },
+        "Функциональность": {
+            "status": true,
+            "errors": [],
+            "checks": [
+                "Проверка фильтрации услуг"
+            ]
+        }
+    },
+    "analytics": {
+        "pageLoads": [],
+        "responseTimes": [],
+        "errors": [],
+        "warnings": [],
+        "securityChecks": [],
+        "performanceMetrics": [],
+        "functionChecks": {
+            "servicesFilter": {
+                "status": "success",
+                "message": "Функциональность фильтрации услуг работает корректно"
+            }
+        },
+        "testAccounts": [],
+        "authChecks": []
+    }
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="15" assertions="144" errors="0" warnings="0" failures="0" skipped="0" time="0.318758">
+    <testsuite name="Тесты Автосервиса" tests="15" assertions="144" errors="0" warnings="0" failures="0" skipped="0" time="0.318758">
+      <testsuite name="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" tests="15" assertions="144" errors="0" warnings="0" failures="0" skipped="0" time="0.318758">
+        <testcase name="testHomePageLoad" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="92" assertions="2" time="0.004290">
+          <system-out>
+
+┌ ОТЧЕТ О ТЕСТИРОВАНИИ САЙТА СТО ────────────────────────────────┐
+■ ОБЩАЯ СТАТИСТИКА:
+  • Всего тестов: 6
+  • Успешно пройдено: 6
+  • Ошибок: 0
+  • Процент успешных тестов: 100%
+
+■ ДЕТАЛЬНЫЕ РЕЗУЛЬТАТЫ:
+
+Регистрация:
+Статус: ✓ УСПЕШНО
+
+Вход:
+Статус: ✓ УСПЕШНО
+
+Навигация:
+Статус: ✓ УСПЕШНО
+
+Безопасность:
+Статус: ✓ УСПЕШНО
+
+Адаптация:
+Статус: ✓ УСПЕШНО
+
+Функциональность:
+Статус: ✓ УСПЕШНО
+
+■ ПРОИЗВОДИТЕЛЬНОСТЬ:
+  • home:
+    Время загрузки: 0.0012850761413574 сек
+    Размер: 19.69 KB
+
+└─────────────────────── ТЕСТИРОВАНИЕ ЗАВЕРШЕНО ─────────────────┘
+</system-out>
+        </testcase>
+        <testcase name="testServicesPageLoad" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="116" assertions="2" time="0.000182"/>
+        <testcase name="testFaqPageLoad" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="140" assertions="2" time="0.000175"/>
+        <testcase name="testVacanciesPageLoad" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="164" assertions="2" time="0.000144"/>
+        <testcase name="testAuthPage" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="188" assertions="3" time="0.125574"/>
+        <testcase name="testProfilePage" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="275" assertions="9" time="0.180094"/>
+        <testcase name="testLogoutFile" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="319" assertions="5" time="0.000362"/>
+        <testcase name="testNavigationMenu" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="356" assertions="24" time="0.001435"/>
+        <testcase name="testImportantElements" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="379" assertions="18" time="0.001009"/>
+        <testcase name="testPerformance" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="407" assertions="6" time="0.001688"/>
+        <testcase name="testHtmlValidity" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="432" assertions="24" time="0.000954"/>
+        <testcase name="testSecurity" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="459" assertions="24" time="0.001070"/>
+        <testcase name="testResponsiveness" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="486" assertions="12" time="0.001238"/>
+        <testcase name="testFaqSearch" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="514" assertions="6" time="0.000294"/>
+        <testcase name="testServicesFilter" class="AutoServiceTest" classname="AutoServiceTest" file="C:\OSPanel\domains\localhost\public\tests\AutoServiceTest.php" line="548" assertions="5" time="0.000248"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

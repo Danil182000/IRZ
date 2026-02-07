@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Вакансии — DrivePoint</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 25px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ff5200;
+      text-decoration: none;
+    }
+    nav a {
+      color: white;
+      margin-left: 35px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff5200;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      font-size: 42px;
+      text-align: center;
+      margin-bottom: 60px;
+      color: #1f1f1f;
+    }
+
+    .section-title span {
+      color: #ff5200;
+    }
+
+    .job-list {
+      display: grid;
+      gap: 40px;
+    }
+
+    .job-item {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .job-item h3 {
+      color: #ff5200;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    .job-item p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    .job-item .salary {
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 60px 0 30px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-column h3 {
+      color: #ff5200;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #ff5200;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid #333;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+  <a href="index.html" class="logo">DrivePoint</a>
+      <nav>
+        <a href="service.html">Услуги</a>
+        <a href="faq.html">FAQ</a>
+        <a href="vacancies.html">Вакансии</a>
+        <a href="login.html">Личный кабинет</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <h1 class="section-title"><span>Вакансии</span> DrivePoint</h1>
+
+  <div class="job-list">
+
+    <div class="job-item">
+      <h3>Автомеханик</h3>
+      <p>Требуется опытный специалист для работы с ходовой частью и техническим обслуживанием.</p>
+      <p><strong>График:</strong> сменный 2/2 или 5/2</p>
+      <p class="salary">Зарплата: от 80 000 ₽</p>
+    </div>
+
+    <div class="job-item">
+      <h3>Мастер-приёмщик</h3>
+      <p>Общение с клиентами, оформление заказ-нарядов, контроль качества выполнения работ.</p>
+      <p><strong>График:</strong> 5/2, с 9:00 до 19:00</p>
+      <p class="salary">Зарплата: от 60 000 ₽ + бонусы</p>
+    </div>
+
+    <div class="job-item">
+      <h3>Автоэлектрик</h3>
+      <p>Поиск и устранение неисправностей в электросистеме, установка оборудования.</p>
+      <p><strong>График:</strong> гибкий</p>
+      <p class="salary">Зарплата: от 75 000 ₽</p>
+    </div>
+
+    <div class="job-item">
+      <h3>Мойщик автомобилей</h3>
+      <p>Внутренняя и внешняя мойка автомобилей, химчистка салона.</p>
+      <p><strong>График:</strong> 2/2 или 5/2</p>
+      <p class="salary">Зарплата: от 40 000 ₽ + чаевые</p>
+    </div>
+
+    <div class="job-item">
+      <h3>Администратор сервиса</h3>
+      <p>Приём звонков, ведение графика записи, консультирование клиентов.</p>
+      <p><strong>График:</strong> 5/2, с 9:00 до 18:00</p>
+      <p class="salary">Зарплата: от 45 000 ₽</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-content">
+    <div class="footer-column">
+      <h3>О компании</h3>
+      <ul>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="history.html">История</a></li>
+        <li><a href="advantages.html">Преимущества</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Услуги</h3>
+      <ul>
+        <li><a href="#">Диагностика</a></li>
+        <li><a href="#">Ремонт</a></li>
+        <li><a href="#">ТО</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Контакты</h3>
+      <ul>
+        <li>+7 (900) 123-45-67</li>
+        <li>г. Москва, ул. Автомобильная, 12</li>
+        <li><a href="contacts.html">Обратная связь</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    &copy; 2025 DrivePoint. Все права защищены.
+  </div>
+</footer>
+
+</body>
+</html>
